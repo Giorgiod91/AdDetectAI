@@ -1,0 +1,4 @@
+- Überwachung von **Google-Suchanfragen** und **Browserverläufen**.
+- Erkennung von **verdächtigen Mustern** in Suchanfragen und Webseitenbesuchen.
+- Analyse von **verdächtigen Zeitmustern**, z.B. ungewöhnlichen Aktivitätszeiten.
+- Integration von **Machine Learning**, um automatisch verdächtige Aktivitäten zu klassifizieren und zu markieren.
