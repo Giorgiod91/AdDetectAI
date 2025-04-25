@@ -1,10 +1,10 @@
-# AdDetector - Machine Learning Tool zur Unterscheidung und Entfernung von Werbung in Videos
+# AdDetectAI  - Machine Learning Tool zur Unterscheidung und Entfernung von Werbung in Videos
 
-**AdDetector** ist ein **Machine Learning Tool**, das entwickelt wird, um **Werbung** in **Videos** zu erkennen und automatisch zu entfernen. Es verwendet **Computer Vision** und **Machine Learning**, um zwischen Werbeabschnitten und normalen Video-Inhalten zu unterscheiden.
+**AdDetectAI** ist ein **Machine Learning Tool**, das entwickelt wird, um **Werbung** in **Videos** zu erkennen und automatisch zu entfernen. Es verwendet **Computer Vision** und **Machine Learning**, um zwischen Werbeabschnitten und normalen Video-Inhalten zu unterscheiden.
 
 ## Funktionen
 
-- **Erkennung** von Werbeanzeigen in Videos (z.B. YouTube-Videos).
+- Erkennung von Werbeanzeigen in Videos (z.B. YouTube-Videos).
 - Klassifikation von Videoinhalten als **Werbung** oder **normale Videos**.
 - Möglichkeit zur **Entfernung** von Werbeanzeigen aus den Videos.
 - Integration von **Machine Learning** Neural Networks zur kontinuierlichen Verbesserung der Erkennungsgenauigkeit.
