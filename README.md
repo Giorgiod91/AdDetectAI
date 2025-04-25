@@ -1,6 +1,6 @@
 # Forensix
 
-**Forensix** ist ein einfaches Tool zur **Überwachung von Browseraktivitäten** und **Analyse von Web-Verhalten**, das mit **Machine Learning** kombiniert wird, um verdächtige Aktivitäten zu erkennen und Hinweise auf potenzielle **kriminelle Handlungen** zu geben. Ziel ist es, Ermittler bei der Untersuchung von Fällen zu unterstützen, bei denen Personen versuchen, ihre **Spuren zu verwischen**.
+**Forensix** ist ein einfaches Tool zur **Überwachung von Browseraktivitäten** und **Analyse von Web-Verhalten**, das mit **Machine Learning** kombiniert wird, um verdächtige Aktivitäten zu erkennen und Hinweise auf potenzielle **kriminelle Handlungen** zu geben. Ziel ist es,  bei der Untersuchung von Fällen zu unterstützen, bei denen Personen versuchen, ihre **Spuren zu verwischen**.
 
 ## Funktionen
 
