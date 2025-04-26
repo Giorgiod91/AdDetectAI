@@ -1,17 +1,20 @@
-# Forensix
+# AdDetectAI  - Machine Learning Tool zur Unterscheidung und Entfernung von Werbung in Videos
 
-**Forensix** ist ein einfaches Tool zur **Überwachung von Browseraktivitäten** und **Analyse von Web-Verhalten**, das mit **Machine Learning** kombiniert wird, um verdächtige Aktivitäten zu erkennen und Hinweise auf potenzielle **kriminelle Handlungen** zu geben. Ziel ist es, Ermittler bei der Untersuchung von Fällen zu unterstützen, bei denen Personen versuchen, ihre **Spuren zu verwischen**.
+**AdDetectAI** ist ein **Machine Learning Tool**, das entwickelt wird, um **Werbung** in **Videos** zu erkennen und automatisch zu entfernen. Es verwendet **Computer Vision** und **Machine Learning**, um zwischen Werbeabschnitten und normalen Video-Inhalten zu unterscheiden.
 
 ## Funktionen
 
-- Überwachung von **Google-Suchanfragen** und **Browserverläufen**.
-- Erkennung von **verdächtigen Mustern** in Suchanfragen und Webseitenbesuchen.
-- Analyse von **verdächtigen Zeitmustern**, z.B. ungewöhnlichen Aktivitätszeiten.
-- Integration von **Machine Learning**, um automatisch verdächtige Aktivitäten zu klassifizieren und zu markieren.
+- Erkennung von Werbeanzeigen in Videos (z.B. YouTube-Videos).
+- Klassifikation von Videoinhalten als **Werbung** oder **normale Videos**.
+- Möglichkeit zur **Entfernung** von Werbeanzeigen aus den Videos.
+- Integration von **Machine Learning** Neural Networks zur kontinuierlichen Verbesserung der Erkennungsgenauigkeit.
 
-
+- 
 ## Lernziel
 - Vertiefung in Machine Learning
 - Vertiefung in Data Analyst
 - Lernen mit Selenium zu Arbeiten und Scripts zur Ueberwachung zu erstellen
-- Einblick in die Cybersecurity
+- Einblick in Videoverarbeitung und Medienanalyse
+- Erweiterung der Kenntnisse in Deep Learning
+- Praktische Anwendung von Machine Learning in realen Problemen
+- Erstellen von praktischen Tools
