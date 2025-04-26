@@ -11,7 +11,7 @@ driver = webdriver.Chrome()
 
 # action so here navigate to a web page
 
-driver.get("https://www.selenium.dev/selenium/web/web-form.html")
+driver.get("https://www.youtube.com/watch?v=A-jQRB-r2Do&list=RDA-jQRB-r2Do&start_radio=1")
 
 # now request browser information
 
@@ -21,32 +21,27 @@ title = driver.title
 
 # sync state with the current browser
 
-driver.implicitly_wait(0.5)
-
-
+driver.implicitly_wait(5)
 
 # find an element 
-text_box = driver.find_element(by=By.NAME, value="my-text")
-submit_button = driver.find_element(by=By.CSS_SELECTOR, value="button")
+
+play_button = driver.find_element(By.ID, "ytp-id-39")
+
+# search for elements 
+elements = driver.find_elements(By.TAG_NAME, "button")
+
+for e in elements:
+    print(e.text)
 
 
 # take action on an element
 
-text_box.send_keys("Selenium")
-submit_button.click()
-
-
-# request element information
-
-message = driver.find_element(by=By.ID, value="message")
-text = message.text
-
-print(text)
+play_button.click()
 
 
 # finally end the session
 
-driver.quit()
+#driver.quit()
 
 
 
