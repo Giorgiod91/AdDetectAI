@@ -28,20 +28,28 @@ driver.implicitly_wait(5)
 #play button
 play_button = driver.find_element(By.CLASS_NAME, "ytp-play-button")
 # accept the cookies button
-cookies_accept_button = driver.find_element(By.XPATH, '//button[contains(text(), "Alle akzeptieren") or contains(text(), "Ich stimme zu")]')
-cookies_accept_button.click()
+try:
+    #i used the f12 conmsole to find out the exact path of the accept button that will remove the cookie accept window
+    cookies_accept_button = driver.find_element(By.XPATH, '/html/body/ytd-app/ytd-consent-bump-v2-lightbox/tp-yt-paper-dialog/div[4]/div[2]/div[6]/div[1]/ytd-button-renderer[2]/yt-button-shape/button')
+    
+    cookies_accept_button.click()
+    time.sleep(2)  
+    print("Cookies akyeptiert!")
+   
+    
+except:
+    print("cookies fenster nicht entdeckt")
+
 # search for elements 
 elements = driver.find_elements(By.TAG_NAME, "button")
 
-for e in elements:
-    print(e.text)
+#for e in elements:
+#    print(e.text)
 
 
 # take action on an element
 #
-play_button.click()
-time.sleep(2)
-play_button.click()
+
 # define values that i will use in my model later on
 value_x = 0
 
