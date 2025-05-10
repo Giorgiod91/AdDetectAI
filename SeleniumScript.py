@@ -64,4 +64,4 @@ input("enter something to quit the session")
 driver.quit()
 
 
-
+#TODO find the exath path for the adds to later turn them of
