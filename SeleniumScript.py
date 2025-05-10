@@ -40,6 +40,17 @@ try:
 except:
     print("cookies fenster nicht entdeckt")
 
+
+
+try: 
+    add_video = driver.find_element(By.XPATH, "/html/body/ytd-app/div[1]/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[1]/div[2]/div/div[2]/ytd-player/div/div/div[7]")
+    print(add_video)
+    print("adds found !")
+    
+except:
+    print("couldnt find adds")
+
+
 # search for elements 
 elements = driver.find_elements(By.TAG_NAME, "button")
 
