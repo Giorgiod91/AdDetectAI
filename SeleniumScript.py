@@ -25,7 +25,7 @@ driver.implicitly_wait(5)
 
 # find an element 
 
-play_button = driver.find_element(By.ID, "ytp-id-39")
+play_button = driver.find_element(By.CLASS_NAME, "ytp-play-button")
 
 # search for elements 
 elements = driver.find_elements(By.TAG_NAME, "button")
@@ -35,13 +35,20 @@ for e in elements:
 
 
 # take action on an element
-
+#
 play_button.click()
+# define values that i will use in my model later on
+value_x = 0
+
 
 
 # finally end the session
 
-#driver.quit()
+#wait for user input so it wont quit after finishing all the code i need it be open more longer
+
+input("enter something to quit the session")
+
+driver.quit()
 
 
 
