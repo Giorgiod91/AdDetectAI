@@ -4,6 +4,7 @@
 
 from selenium.webdriver.common.by import By
 from selenium import webdriver
+import time
 
 # start Selenium session 
 driver = webdriver.Chrome()
@@ -24,9 +25,11 @@ title = driver.title
 driver.implicitly_wait(5)
 
 # find an element 
-
+#play button
 play_button = driver.find_element(By.CLASS_NAME, "ytp-play-button")
-
+# accept the cookies button
+cookies_accept_button = driver.find_element(By.XPATH, '//button[contains(text(), "Alle akzeptieren") or contains(text(), "Ich stimme zu")]')
+cookies_accept_button.click()
 # search for elements 
 elements = driver.find_elements(By.TAG_NAME, "button")
 
@@ -36,6 +39,8 @@ for e in elements:
 
 # take action on an element
 #
+play_button.click()
+time.sleep(2)
 play_button.click()
 # define values that i will use in my model later on
 value_x = 0
