@@ -28,27 +28,36 @@ driver.implicitly_wait(5)
 #play button
 play_button = driver.find_element(By.CLASS_NAME, "ytp-play-button")
 # accept the cookies button
-try:
-    #i used the f12 conmsole to find out the exact path of the accept button that will remove the cookie accept window
-    cookies_accept_button = driver.find_element(By.XPATH, '/html/body/ytd-app/ytd-consent-bump-v2-lightbox/tp-yt-paper-dialog/div[4]/div[2]/div[6]/div[1]/ytd-button-renderer[2]/yt-button-shape/button')
+
+#function to check for cookies and also accept it automatically
+def click_away_cookies():
     
-    cookies_accept_button.click()
-    time.sleep(2)  
-    print("Cookies akyeptiert!")
+    try:
+    #i used the f12 conmsole to find out the exact path of the accept button that will remove the cookie accept window
+        cookies_accept_button = driver.find_element(By.XPATH, '/html/body/ytd-app/ytd-consent-bump-v2-lightbox/tp-yt-paper-dialog/div[4]/div[2]/div[6]/div[1]/ytd-button-renderer[2]/yt-button-shape/button')
+    
+        cookies_accept_button.click()
+        time.sleep(2)  
+        print("Cookies akyeptiert!")
    
     
-except:
-    print("cookies fenster nicht entdeckt")
+    except:
+        print("cookies fenster nicht entdeckt")
 
 
 
-try: 
-    add_video = driver.find_element(By.XPATH, "/html/body/ytd-app/div[1]/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[1]/div[2]/div/div[2]/ytd-player/div/div/div[7]")
-    print(add_video)
-    print("adds found !")
+#function to find the adds i will later then try to remove or cover up
+def find_Adds():
     
-except:
-    print("couldnt find adds")
+    try: 
+        add_video = driver.find_element(By.XPATH, "/html/body/ytd-app/div[1]/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[1]/div[2]/div/div[2]/ytd-player/div/div/div[7]")
+        print(add_video)
+        print("adds found !")
+    
+    except:
+        print("couldnt find adds")
+
+find_Adds()
 
 
 # search for elements 
