@@ -57,8 +57,16 @@ def find_Adds():
     except:
         print("couldnt find adds")
 
-find_Adds()
+    return add_video
 
+adds = find_Adds()
+
+
+
+#function to remove the adds if we found some
+
+def remove_adds(adds):
+    #TODO create function to remove adds
 
 # search for elements 
 elements = driver.find_elements(By.TAG_NAME, "button")
