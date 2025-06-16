@@ -48,18 +48,22 @@ def click_away_cookies():
 
 #function to find the adds i will later then try to remove or cover up
 def find_Adds():
+    ad_div_visible = 0
     
     try: 
         add_video = driver.find_element(By.XPATH, "/html/body/ytd-app/div[1]/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[1]/div[2]/div/div[2]/ytd-player/div/div/div[7]")
         print(add_video)
         print("adds found !")
+        ad_div_visible =1
     
     except:
         print("couldnt find adds")
 
-    return add_video
+    return [add_video, ad_div_visible]
 
 adds = find_Adds()
+
+ad_visible = find_Adds()
 
 
 
