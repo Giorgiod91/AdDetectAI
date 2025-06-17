@@ -1,27 +1,20 @@
-# AdDetectAI - Machine Learning Tool zur Unterscheidung und Entfernung von Werbung in Videos
+# YouTube Ad Classifier (Selenium + Machine Learning)
+This project uses Python and Selenium to detect ads on YouTube, extract their content, and classify them into categories (e.g. tech, gaming, finance) using machine learning.
 
-**AdDetectAI** ist ein **Machine Learning Tool**, das entwickelt wird, um **Werbung** in **Videos** zu erkennen und automatisch zu entfernen. Es verwendet **Computer Vision** und **Machine Learning**, um zwischen Werbeabschnitten und normalen Video-Inhalten zu unterscheiden.
+##  What It Does
 
-## Funktionen
-
-- Erkennung von Werbeanzeigen in Videos (z.B. YouTube-Videos).
-- Klassifikation von Videoinhalten als **Werbung** oder **normale Videos**.
-- Möglichkeit zur **Entfernung** von Werbeanzeigen aus den Videos.
-- Integration von **Machine Learning** Neural Networks zur kontinuierlichen Verbesserung der Erkennungsgenauigkeit.
+- Launches a real Chrome session via Selenium
+- Detects YouTube ads (pre-roll or mid-roll)
+- Extracts visual/audio/text features from the ads
+- Applies a machine learning model to classify ad types
+- (Planned) Dashboards, insights, and user profiling
 
 -
 
 ## Lernziel
 
-- Vertiefung in Machine Learning
-- Vertiefung in Data Analyst
-- Lernen mit Selenium zu Arbeiten und Scripts zur Ueberwachung zu erstellen
-- Einblick in Videoverarbeitung und Medienanalyse
-- Erweiterung der Kenntnisse in Deep Learning
-- Praktische Anwendung von Machine Learning in realen Problemen
-- Erstellen von praktischen Tools
+I wanted to explore:
+- How YouTube ads are structured and delivered
+- How machine learning can turn raw media into labeled, usable data
+- How to build a practical ML pipeline using real-world data
 
-# X Features
-
-- ad_div_visible: 1, wenn Werbevideo-Container sichtbar ist, sonst 0
-- ad_button_present: 1, wenn ein „Skip Ad“-Button vorhanden ist, sonst 0
